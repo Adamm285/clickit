@@ -5,11 +5,37 @@
 }
 
 body{
-    font-family: arial, helvetica, sans-serif;
-    line-height: 1.4;
+    
+    font-family: Blippo-Bold;
+    line-height: 1.4; 
+    background-image: url("https://blog.publix.com/publix/files/2019/10/Deli-Department-Featured.jpg");
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
 }
 
-a {
-    color: #333;
-    text-decoration: none;
+img {
+    height: 250px;
+    width: 250px;
+}
+
+.navbar {
+    width: 100%;
+    margin: 0px;
+    padding: 0 20px 0 20px;
+    background-color: #3F8F2C;
+    color: #fff;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.navbar-brand {
+    background-color: #3F8F2C;
+}
+
+.footer {
+    text-align: center;
+    color: #fff;
 }

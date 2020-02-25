@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 // imported in from the first file in components
 import Todos from "./components/Todos";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import './App.css';
 
 
@@ -46,30 +48,26 @@ class App extends Component {
         completed: false
       }, {
         id: 10,
-        img: "./img/orangeblue.jpg",
-        completed: false
-      }, {
-        id: 11,
         img: "./img/philly.jpg",
         completed: false
       }, {
-        id: 12,
+        id: 11,
         img: "./img/roastbeef.jpg",
         completed: false
       }, {
-        id: 13,
+        id: 12,
         img: "./img/tuna.jpg",
         completed: false
       }, {
-        id: 14,
-        img: "../../turkey.jpg",
+        id: 13,
+        img: "./img/turkey.jpg",
         completed: false
       }, {
-        id: 15,
+        id: 14,
         img: "./img/ulitimate.jpg",
         completed: false
       }, {
-        id: 16,
+        id: 15,
         img: "./img/veggie.jpg",
         completed: false
       }
@@ -90,10 +88,13 @@ class App extends Component {
 
   render() {
     return ( 
-    <div> 
-      {/* once todos was imported at the top we can use it in the app below */ } 
-        <Todos todos={this.state.todos} markComplete= {this.markComplete}/>
-    </div>
+      <div className="container">
+        <Header />
+        <div className="row">
+          <Todos todos={this.state.todos} markComplete= {this.markComplete}/>
+        </div>
+        <Footer />
+      </div>
     )
   }
 }
