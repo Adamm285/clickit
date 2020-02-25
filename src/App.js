@@ -10,55 +10,55 @@ class App extends Component {
     todos: [
       {
         id: 1,
-        img: "./chickentender.jpg",
+        img: "./img/chickentender.jpg",
         completed: false
       }, {
         id: 2,
-        img: "../chickensalad.jpg",
+        img: "./img/chickensalad.jpg",
         completed: false
       }, {
         id: 3,
-        img: "../../cuban.jpg",
+        img: "./img/cuban.jpg",
         completed: false
       }, {
         id: 4,
-        img: "../../eggsalad.jpg",
+        img: "./img/eggsalad.jpg",
         completed: false
       }, {
         id: 5,
-        img: "../../ham.jpg",
+        img: "./img/ham.jpg",
         completed: false
       }, {
         id: 6,
-        img: "../../hamturkey.jpg",
+        img: "./img/hamturkey.jpg",
         completed: false
       }, {
         id: 7,
-        img: "../../italian.jpg",
+        img: "./img/italian.jpg",
         completed: false
       }, {
         id: 8,
-        img: "../../meatball.jpg",
+        img: "./img/meatball.jpg",
         completed: false
       }, {
         id: 9,
-        img: "../../mojo.jpg",
+        img: "./img/mojo.jpg",
         completed: false
       }, {
         id: 10,
-        img: "../../orangeblue.jpg",
+        img: "./img/orangeblue.jpg",
         completed: false
       }, {
         id: 11,
-        img: "../../philly.jpg",
+        img: "./img/philly.jpg",
         completed: false
       }, {
         id: 12,
-        img: "../../roastbeef.jpg",
+        img: "./img/roastbeef.jpg",
         completed: false
       }, {
         id: 13,
-        img: "../../tuna.jpg",
+        img: "./img/tuna.jpg",
         completed: false
       }, {
         id: 14,
@@ -66,11 +66,11 @@ class App extends Component {
         completed: false
       }, {
         id: 15,
-        img: "../../ulitimate.jpg",
+        img: "./img/ulitimate.jpg",
         completed: false
       }, {
         id: 16,
-        img: "../../veggie.jpg",
+        img: "./img/veggie.jpg",
         completed: false
       }
     ]
