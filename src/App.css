@@ -1,12 +1,15 @@
-*{
+*{  
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('Blippo Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+
 body{
-    
-    font-family: Blippo-Bold;
     line-height: 1.4; 
     background-image: url("https://blog.publix.com/publix/files/2019/10/Deli-Department-Featured.jpg");
     background-attachment:fixed;

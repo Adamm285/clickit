@@ -5,9 +5,9 @@ export class TodoItem extends Component {
     render() {
         const { id, img } = this.props.todo;
         return (
-            <div className="row">
+            <div>
                     <img src={img} alt={id} onClick={this.props.markComplete.bind
-                    (this, id)} />
+                    (this, id) } />
                     {/* <p>{id}</p> */}
             </div>
         )

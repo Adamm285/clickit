@@ -8,12 +8,14 @@ import './App.css';
 
 
 class App extends Component {
+
+
   state = {
     todos: [
       {
         id: 1,
         img: "./img/chickentender.jpg",
-        completed: false
+        completed: true
       }, {
         id: 2,
         img: "./img/chickensalad.jpg",
@@ -64,22 +66,39 @@ class App extends Component {
         completed: false
       }, {
         id: 14,
-        img: "./img/ulitimate.jpg",
+        img: "./img/ultimate.jpg",
         completed: false
       }, {
         id: 15,
         img: "./img/veggie.jpg",
         completed: false
+      },{
+        id: 16,
+        img: "./img/orangeblue.jpg",
+        completed: false
       }
+
     ]
   }
-
+  Shuffle = (a) => {
+    var cIndex = a.length, tVal, rIndex;
+    while (0 !== cIndex) {
+      rIndex = Math.floor(Math.random() * cIndex);
+      cIndex -= 1;
+      // 
+      tVal = a[cIndex];
+      
+    }
+  }
   markComplete = (id) => {
    this.setState({ todos: this.state.todos.map(todo => {
      if (todo.id === id){
       todo.completed = !todo.completed;
+      
      }
+     
      return todo;
+     
    })
    
   });
@@ -91,7 +110,7 @@ class App extends Component {
       <div className="container">
         <Header />
         <div className="row">
-          <Todos todos={this.state.todos} markComplete= {this.markComplete}/>
+          <Todos todos={this.state.todos} markComplete= {this.markComplete} /> 
         </div>
         <Footer />
       </div>
