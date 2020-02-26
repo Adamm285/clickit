@@ -4,10 +4,23 @@ import TodoItem from './TodoItem';
 import PropTypes from 'prop-types';
 // 
 class Todos extends Component {
+  Shuffle = (todos) => {
+    var cIndex = todos.length, tVal, rIndex;
+    while (0 !== cIndex) {
+      rIndex = Math.floor(Math.random() * cIndex);
+      cIndex -= 1;
+      // 
+      tVal = todos[cIndex];
+      todos[cIndex] = todos[rIndex];
+      todos[rIndex] = tVal;
+    }
+    console.log(todos);
 
-
+    return todos;
+  }
   render(){
-    return this.props.todos.map((todo) => (
+    // this.Shuffle(this.props.todos);
+    return this.Shuffle(this.props.todos).map((todo) => (
       <TodoItem key={todo.id} todo={todo} markComplete= 
         {this.props.markComplete} />
     ))
@@ -19,42 +32,6 @@ Todos.propTypes = {
 }
 
 export default Todos;
-
-// // By extending the React.Component class, Counter inherits functionality from it
-// class Counter extends React.Component {
-//   // Setting the initial state of the Counter component
-//   state = {
-//     count: 0
-//   };
-
-//   // handleIncrement increments this.state.count by 1
-//   handleIncrement = () => {
-//     // We always use the setState method to update a component's state
-//     this.setState({ count: this.state.count + 1 });
-//     if (this.state.count > 1){
-//       console.log("you guessed incorrectly")
-//     }
-//   };
-
-//   // The render method returns the JSX that should be rendered
-//   render() {
-//     return (
-//       <div className="card text-center">
-//         <div className="card-header bg-primary text-white">
-//           Click a picture!
-//         </div>
-//         <div className="card-body">
-//           <p className="card-text">Click Count: {this.state.count}</p>
-//           <button className="btn btn-primary" onClick={this.handleIncrement}>
-//             Increment
-//           </button>
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-
-// export default Counter;
 //   //design webpage layout
 //       // fixed navbar
 //       // container for all the images to shuffle

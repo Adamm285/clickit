@@ -8,8 +8,6 @@ import './App.css';
 
 
 class App extends Component {
-
-
   state = {
     todos: [
       {
@@ -19,98 +17,89 @@ class App extends Component {
       }, {
         id: 2,
         img: "./img/chickensalad.jpg",
-        completed: false
+        completed: true
       }, {
         id: 3,
         img: "./img/cuban.jpg",
-        completed: false
+        completed: true
       }, {
         id: 4,
         img: "./img/eggsalad.jpg",
-        completed: false
+        completed: true
       }, {
         id: 5,
         img: "./img/ham.jpg",
-        completed: false
+        completed: true
       }, {
         id: 6,
         img: "./img/hamturkey.jpg",
-        completed: false
+        completed: true
       }, {
         id: 7,
         img: "./img/italian.jpg",
-        completed: false
+        completed: true
       }, {
         id: 8,
         img: "./img/meatball.jpg",
-        completed: false
+        completed: true
       }, {
         id: 9,
         img: "./img/mojo.jpg",
-        completed: false
+        completed: true
       }, {
         id: 10,
         img: "./img/philly.jpg",
-        completed: false
+        completed: true
       }, {
         id: 11,
         img: "./img/roastbeef.jpg",
-        completed: false
+        completed: true
       }, {
         id: 12,
         img: "./img/tuna.jpg",
-        completed: false
+        completed: true
       }, {
         id: 13,
         img: "./img/turkey.jpg",
-        completed: false
+        completed: true
       }, {
         id: 14,
         img: "./img/ultimate.jpg",
-        completed: false
+        completed: true
       }, {
         id: 15,
         img: "./img/veggie.jpg",
-        completed: false
+        completed: true
       },{
         id: 16,
         img: "./img/orangeblue.jpg",
-        completed: false
+        completed: true
       }
-
     ]
   }
-  Shuffle = (a) => {
-    var cIndex = a.length, tVal, rIndex;
-    while (0 !== cIndex) {
-      rIndex = Math.floor(Math.random() * cIndex);
-      cIndex -= 1;
-      // 
-      tVal = a[cIndex];
-      
-    }
-  }
+  // 
   markComplete = (id) => {
    this.setState({ todos: this.state.todos.map(todo => {
      if (todo.id === id){
       todo.completed = !todo.completed;
-      
+      console.log("you win")
      }
-     
+     if (todo.id === id && !todo.completed !== true){
+      todo.completed = !todo.completed;
+      console.log("you lose");
+     }
      return todo;
-     
    })
-   
   });
-  console.log(this.state);
+  console.log(id);
   }
-
   render() {
     return ( 
       <div className="container">
         <Header />
         <div className="row">
           <Todos todos={this.state.todos} markComplete= {this.markComplete} /> 
+          
         </div>
         <Footer />
       </div>
