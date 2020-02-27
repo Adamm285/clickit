@@ -5,19 +5,7 @@ import PropTypes from 'prop-types';
 // 
 class Todos extends Component {
   Shuffle = (todos) => {
-    var cIndex = todos.length, tVal, rIndex;
-    
-    while (0 !== cIndex) {
-      rIndex = Math.floor(Math.random() * cIndex);
-      cIndex -= 1;
-      
-      // 
-      tVal = todos[cIndex];
-      todos[cIndex] = todos[rIndex];
-      todos[rIndex] = tVal;
-    }
-    console.log(todos);
-    
+    todos.sort(() => Math.random() - 0.5);
     return todos;
   }
   render(){
