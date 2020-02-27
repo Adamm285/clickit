@@ -9,7 +9,7 @@ class Todos extends Component {
     return todos;
   }
   render(){
-    // this.Shuffle(this.props.todos);
+    
     return this.Shuffle(this.props.todos).map((todo) => (
       <TodoItem 
       key={todo.id} 
