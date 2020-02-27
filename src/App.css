@@ -8,7 +8,7 @@
 @font-face {
     font-family: 'MyWebFont';
     src: url('Blippo Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-  }
+}
 
 body{
     line-height: 1.4; 
@@ -34,7 +34,7 @@ img {
 }
 
 .container {
-    padding-top: 50px;
+    padding-top: 60px;
     
 }
 

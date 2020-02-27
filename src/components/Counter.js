@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from 'prop-types';
 // By extending the React.Component class, Counter inherits functionality from it
 class Counter extends React.Component {
   // Setting the initial state of the Counter component
@@ -12,7 +11,7 @@ class Counter extends React.Component {
         <div>
             <span className="navbar-brand navLeft" 
             onClick={this.state.count++}
-            >Score: {this.state.count}</span>
+            >| Score: {this.state.count} |</span>
         </div>
     );
  }

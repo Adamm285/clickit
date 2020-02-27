@@ -3,7 +3,6 @@ import React, {Component} from "react";
 import Todos from "./components/Todos";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Counter from "./components/Counter";
 import './App.css';
 
 
@@ -82,13 +81,11 @@ class App extends Component {
       todos: this.state.todos.map(todo => {
         if (todo.id === id) {
           todo.completed = !todo.completed;
-          
-          console.log("you win");
         }
         if (todo.id === id && !todo.completed !== true) {
           todo.completed = !todo.completed;
-          alert("you lose");
-          // console.log(score)
+          alert("you lost");
+          window.location.reload(false);
         }
         return todo;
       })
