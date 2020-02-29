@@ -76,15 +76,32 @@ class App extends Component {
     }]
   }
   // 
+  // 
+  componentDidMount() {
+    if(window.innerWidth < 640){
+      let aryNew = this.state.todos;
+      aryNew.pop();
+      this.setState({todos: aryNew});
+
+      // aryNew // [23, 24, 15, 35, 42] 
+      // let cutElements = arryNew.splice(-2)
+      // cutElements // [24, 15]
+      // aryNew // [23, 35, 42]
+    }
+  }
+  scoreKeeper = () => {
+    this.score++
+  }
   markComplete = (id) => {
     this.setState({
       todos: this.state.todos.map(todo => {
         if (todo.id === id) {
           todo.completed = !todo.completed;
+          this.scoreKeeper();
         }
         if (todo.id === id && !todo.completed !== true) {
           todo.completed = !todo.completed;
-          alert("you lost");
+          alert("you lost your score is " + this.score);
           window.location.reload(false);
         }
         return todo;
@@ -93,18 +110,17 @@ class App extends Component {
     console.log(id);
   }
   render() {
-    return ( <div className = "container" >
-      <Header
-      /> <div className = "row" >
-      <Todos todos = {
-        this.state.todos
-      }
-      markComplete = {
-        this.markComplete
-      }
-      /> </div > 
+    return ( 
+    <div className = "container" >
+      <Header/> 
+      <div className = "row" >
+          <Todos 
+          todos = {this.state.todos} 
+          markComplete = {this.markComplete}
+          /> 
+      </div > 
       <Footer />
-      </div>
+    </div>
     )
   }
 }

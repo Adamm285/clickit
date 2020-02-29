@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'MyWebFont';
-    src: url('Blippo Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+    src: url('Blippo Bold.ttf')  format('truetype')
 }
 
 body{
@@ -20,12 +20,12 @@ body{
 }
 
 img {
-    height: 250px;
-    width: 250px;
+    height: 100%;
+    width: 100%;
     padding: 5px;
 }
 
-.navbar {
+.apptop {
     width: 100%;
     margin: 0px;
     padding: 0 20px 0 20px;
@@ -34,7 +34,7 @@ img {
 }
 
 .container {
-    padding-top: 60px;
+    padding-top: 130px;
     
 }
 
@@ -45,4 +45,8 @@ img {
 .footer {
     text-align: center;
     color: #fff;
+    
+}
+.fixed-bottom {
+    margin-right: -15px;
 }

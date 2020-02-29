@@ -24,6 +24,7 @@ Todos.propTypes = {
   todos: PropTypes.array.isRequired
 }
 
+
 export default Todos;
 //   //design webpage layout
 //       // fixed navbar
