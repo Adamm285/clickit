@@ -9,69 +9,70 @@ import './App.css';
 
 class App extends Component {
   state = {
+    count: 0,
     todos: [{
       id: 1,
-      img: "./img/chickentender.jpg",
+      img: "img/chickentender.jpg",
       completed: true
     }, {
       id: 2,
-      img: "./img/chickensalad.jpg",
+      img: "img/chickensalad.jpg",
       completed: true
     }, {
       id: 3,
-      img: "./img/cuban.jpg",
+      img: "img/cuban.jpg",
       completed: true
     }, {
       id: 4,
-      img: "./img/eggsalad.jpg",
+      img: "img/eggsalad.jpg",
       completed: true
     }, {
       id: 5,
-      img: "./img/ham.jpg",
+      img: "img/ham.jpg",
       completed: true
     }, {
       id: 6,
-      img: "./img/hamturkey.jpg",
+      img: "img/hamturkey.jpg",
       completed: true
     }, {
       id: 7,
-      img: "./img/italian.jpg",
+      img: "img/italian.jpg",
       completed: true
     }, {
       id: 8,
-      img: "./img/meatball.jpg",
+      img: "img/meatball.jpg",
       completed: true
     }, {
       id: 9,
-      img: "./img/mojo.jpg",
+      img: "img/mojo.jpg",
       completed: true
     }, {
       id: 10,
-      img: "./img/philly.jpg",
+      img: "img/philly.jpg",
       completed: true
     }, {
       id: 11,
-      img: "./img/roastbeef.jpg",
+      img: "img/roastbeef.jpg",
       completed: true
     }, {
       id: 12,
-      img: "./img/tuna.jpg",
+      img: "img/tuna.jpg",
       completed: true
     }, {
       id: 13,
-      img: "./img/turkey.jpg",
+      img: "img/turkey.jpg",
       completed: true
     }, {
       id: 14,
-      img: "./img/ultimate.jpg",
+      img: "img/ultimate.jpg",
       completed: true
     }, {
       id: 15,
-      img: "./img/veggie.jpg",
+      img: "img/veggie.jpg",
       completed: true
     }, {
       id: 16,
-      img: "./img/orangeblue.jpg",
+      img: "img/orangeblue.jpg",
       completed: true
     }]
   }
@@ -90,6 +91,9 @@ class App extends Component {
     }
   }
   scoreKeeper = () => {
+    let count = this.state.count
+    count++
+    this.setState({count: count})
     this.score++
   }
   markComplete = (id) => {
@@ -101,7 +105,7 @@ class App extends Component {
         }
         if (todo.id === id && !todo.completed !== true) {
           todo.completed = !todo.completed;
-          alert("you lost your score is " + this.score);
+          alert("you lost your score is " + this.state.count)
           window.location.reload(false);
         }
         return todo;
@@ -112,7 +116,7 @@ class App extends Component {
   render() {
     return ( 
     <div className = "container" >
-      <Header/> 
+      <Header count = {this.state.count}/> 
       <div className = "row" >
           <Todos 
           todos = {this.state.todos} 
