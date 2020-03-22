@@ -1,4 +1,4 @@
-# Click-It Memory Game 
+# Click It Memory Game 
 
 ![Project Image](https://blog.seagate.com/wp-content/uploads/2014/08/4843576916_75c594ba06_z.jpg)
 
@@ -29,7 +29,7 @@ Memory game but with a twist! Upon load 16 deli sub photos will appear on the sc
 - CSS
 - HTML
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#click-it-memory-game)
 
 ---
 
@@ -37,7 +37,7 @@ Memory game but with a twist! Upon load 16 deli sub photos will appear on the sc
 
 - Click the live link [here](https://adamm285.github.io/clickit/)
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#click-it-memory-game)
 
 ---
 
@@ -45,7 +45,7 @@ Memory game but with a twist! Upon load 16 deli sub photos will appear on the sc
 
 - Traversy Media React video [here](https://www.youtube.com/watch?v=sBws8MSXN7A&t=3115s)
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#click-it-memory-game)
 
 ---
 
@@ -73,7 +73,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#click-it-memory-game)
 
 ---
 
@@ -83,4 +83,4 @@ SOFTWARE.
 - Website - [Adam M Murphy](https://adamm285.github.io/AdamMurphy'sPortfolio/)
 - Resume - [Adam Murphy Software Developer](https://docs.google.com/document/d/1GLxDLwlrQkmdugH2Xl9MsOv5Rz6rmzqqSrbzfTZ-R3E/edit?usp=sharing)
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#click-it-memory-game)
