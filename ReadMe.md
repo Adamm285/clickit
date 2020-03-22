@@ -1,6 +1,6 @@
 # Click-It Memory Game 
 
-![Project Image](https://occ-0-3934-3933.1.nflxso.net/dnm/api/v6/TsSRXvDuraoJ7apdkH6tsHhf-ZQ/AAAABUj4lbkN6VXMBEGsef10wg-0EbNaqlkt1zrk8NlTXajUf4w8B4viAqPCsAqDnzT3XCjeSrYY3ljWb-9Qze4HjSFzHmWkoJfJ0YHL.png?r=280)
+![Project Image](https://blog.seagate.com/wp-content/uploads/2014/08/4843576916_75c594ba06_z.jpg)
 
 > Don't chose the same sub, Twice!
 
