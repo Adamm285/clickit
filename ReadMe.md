@@ -12,6 +12,7 @@ You're sections headers will be used to reference location of destination.
 - [Description](#description)
 - [How To Use](#how-to-use)
 - [References](#references)
+- [Screen Shots](#screen-shots)
 - [License](#license)
 - [Author Info](#author-info)
 
@@ -48,6 +49,10 @@ Memory game but with a twist! Upon load 16 deli sub photos will appear on the sc
 [Back To The Top](#click-it-memory-game)
 
 ---
+
+#### Screen Shots
+
+![memory game](./img/Capture1.PNG)
 
 ## License
 
